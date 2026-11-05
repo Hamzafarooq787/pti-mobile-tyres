@@ -11,6 +11,7 @@
     "preview": "node scripts/dev.mjs --production"
   },
   "dependencies": {
+    "gsap": "3.15.1",
     "html-react-parser": "5.2.15",
     "next": "16.4.5",
     "react": "19.2.3",
