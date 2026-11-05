@@ -1,0 +1,26 @@
+{
+  "name": "pti-mobile-tyres",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "preview": "node scripts/dev.mjs --production"
+  },
+  "dependencies": {
+    "html-react-parser": "5.2.15",
+    "next": "16.4.5",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  },
+  "type": "module"
+}
