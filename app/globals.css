@@ -69,3 +69,13 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:#11
     transition: none !important;
   }
 }
+
+
+.brand-logo{height:56px;width:auto;display:block}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:1024px){
+.brand-logo{height:44px}
+.menu-toggle{min-width:44px;min-height:44px}
+.site-header nav a{min-height:44px;display:flex;align-items:center}
+.floating-contact a,.call-pill{min-width:48px;min-height:48px}
+}
