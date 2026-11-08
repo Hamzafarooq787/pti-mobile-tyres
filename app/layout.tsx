@@ -6,7 +6,7 @@ import './globals.css';
 import styles from '@/content/styles.json';
 import {siteUrl} from '@/lib/site-url';
 
-export const viewport: Viewport = {themeColor: '#D42222'};
+export const viewport: Viewport = {themeColor: '#DB010D'};
 export const metadata: Metadata = {
  title:{default:'PTI Mobile Tyres | Mobile Tyre Fitting in Leeds',template:'%s | PTI Mobile Tyres'},
  metadataBase:new URL(siteUrl),
