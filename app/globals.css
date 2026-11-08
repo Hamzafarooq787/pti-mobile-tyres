@@ -195,3 +195,159 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
 #content .reference-element-50202737 {
   background: linear-gradient(180deg, #fff, var(--pti-soft-green));
 }
+
+/* The homepage artwork and its cards need independent sizing on phones. */
+@media (max-width: 600px) {
+  #content .tyre-hero {
+    min-height: 0;
+    padding: 28px 16px 24px !important;
+  }
+
+  #content .hero-container {
+    gap: 16px;
+  }
+
+  #content .hero-top-row {
+    margin-bottom: 14px;
+  }
+
+  #content .hero-content h1 {
+    font-size: clamp(28px, 8.4vw, 40px) !important;
+    text-wrap: balance;
+  }
+
+  #content .hero-text {
+    margin-top: 16px !important;
+    font-size: 16px !important;
+  }
+
+  #content .hero-features {
+    margin-top: 16px !important;
+    gap: 8px 12px;
+  }
+
+  #content .hero-visual {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 148px auto;
+    gap: 10px;
+    min-height: 0;
+    margin: 0 !important;
+    padding: 0 2px 12px;
+    overflow: visible;
+  }
+
+  #content .hero-visual::after,
+  #content .hero-visual .orbit,
+  #content .hero-glow {
+    inset: 0 auto auto 50%;
+    width: min(82%, 260px);
+    height: 148px;
+    translate: -50% 0;
+  }
+
+  #content .hero-visual .road-line {
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #content .hero-visual .floating-dot {
+    display: none;
+  }
+
+  #content .car-wrap {
+    grid-area: 1 / 1 / 2 / 3;
+    place-self: center;
+    width: 450px;
+    max-width: none !important;
+    scale: .58;
+  }
+
+  #content .hero-visual .service-card {
+    position: relative;
+    inset: auto;
+    grid-row: 2;
+    min-width: 0;
+    gap: 7px;
+    padding: 9px 8px;
+    box-shadow: 0 6px 16px #14171c16;
+  }
+
+  #content .hero-visual .service-card-top { grid-column: 1; }
+  #content .hero-visual .service-card-bottom { grid-column: 2; }
+
+  #content .hero-visual .service-icon {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+
+  #content .hero-visual .service-card span {
+    font-size: 12px;
+    color: #626872;
+  }
+
+  #content .reference-2348 :is(.mts-trust-content, .pro-services__head, .road-process-head, .coverage-head, .mts-contact-info) h2 {
+    font-size: clamp(27px, 7.8vw, 36px);
+    text-wrap: balance;
+  }
+
+  #content .mts-trust-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  #content .mts-trust-right {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    padding: 0;
+  }
+
+  #content .mts-trust-box-main {
+    min-height: 0;
+    max-width: none;
+    padding: 22px 18px;
+  }
+
+  #content .mts-trust-right .mts-floating-card {
+    position: static;
+    min-width: 0;
+  }
+
+  #content .reference-2348 :is(.mts-trust-point small, .mts-floating-card small, .pro-service-card p, .road-stop-content p, .mts-premium-form-head p) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #content .reference-2348 .pro-service-card {
+    min-height: 0;
+    padding: 18px 16px;
+  }
+
+  #content .reference-2348 .mts-field label {
+    font-size: 14px;
+  }
+
+  #content .reference-2348 .mts-input :is(input, select, textarea),
+  #content .reference-2348 .mts-input :is(input, textarea)::placeholder {
+    min-width: 0;
+    font-size: 16px !important;
+  }
+
+  body:has(.tyre-hero) .call-pill {
+    display: none;
+  }
+
+  body:has(.tyre-hero) .floating-contact {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 370px) {
+  #content .car-wrap {
+    scale: .51;
+  }
+}
