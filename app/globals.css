@@ -171,3 +171,27 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
 #content :is(.coverage-ring-one, .coverage-ring-two) {
   border-color: var(--pti-green-border);
 }
+
+
+/* Inner pages use deep green on light service heroes and mint on dark heroes. */
+#content h1.ekit-heading--title > span {
+  color: var(--pti-mint);
+  background-image: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+#content h1.ekit-heading--title.text_fill > span {
+  color: var(--pti-green);
+}
+
+#content .e-parent:has(h1.ekit-heading--title:not(.text_fill)) {
+  border-block-end: 3px solid var(--pti-green);
+}
+
+#content .e-parent:has(h1.ekit-heading--title.text_fill) {
+  background-color: var(--pti-soft-green);
+}
+
+#content .reference-element-50202737 {
+  background: linear-gradient(180deg, #fff, var(--pti-soft-green));
+}
