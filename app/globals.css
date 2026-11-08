@@ -262,7 +262,7 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
     margin: 0;
     width: 450px;
     max-width: none !important;
-    scale: .58;
+    zoom: .58;
   }
 
   #content .hero-visual .service-card {
@@ -357,6 +357,6 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
 
 @media (max-width: 370px) {
   #content .car-wrap {
-    scale: .51;
+    zoom: .51;
   }
 }
