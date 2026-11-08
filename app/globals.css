@@ -8,7 +8,7 @@
 header.site-header{display:block;width:100%;max-width:none;padding:0;margin:0;position:relative;color:#111318}footer.site-footer{display:block;width:100%;max-width:none;padding:0;margin:0}.reference-kit-30 .phone-strip a{color:#fff}.reference-kit-30 a.hero-btn-primary,.reference-kit-30 a.mts-trust-call,.reference-kit-30 a.pro-service-card__call,.reference-kit-30 a.pro-service-card__cta-call,.reference-kit-30 a.coverage-mobile-call{color:#fff}.reference-kit-30 .floating-contact a{color:#fff}.reference-kit-30 .site-footer :is(a, .copyright){color:#eee}
 .reference-kit-30 .site-footer a:is(:hover,:focus-visible){color:#ff7777;text-decoration:underline}
 .site-footer a:focus-visible{outline:2px solid #ff7777;outline-offset:4px}
-.footer-logo{display:block;width:180px;height:auto;margin-bottom:16px}
+.footer-logo{display:block;width:201px;height:auto;margin-bottom:16px;padding:6px;background:#fff;border-radius:4px}
 .reference-kit-30 .floating-contact .floating-whatsapp{color:var(--pti-charcoal)}
 #content .rkit-marquee-item-content{color:#fff}
 #content .pro-service-card__calltext small{color:#626872}.reference-kit-30 .site-header nav a{color:#111318}.reference-kit-30 .site-header nav a[aria-current=page],.reference-kit-30 .site-header nav a:hover{color:#d42222}.reference-kit-30 .site-header .brand{color:#111318}.reference-kit-30 .brand-text strong,.reference-kit-30 .brand-text>span{color:#d42222}
@@ -77,10 +77,10 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:#11
 }
 
 
-.brand-logo{height:56px;width:auto;display:block}
+.brand-logo{width:201px;height:auto;display:block}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:1024px){
-.brand-logo{height:44px}
+.brand-logo{width:162px}
 .menu-toggle{min-width:44px;min-height:44px}
 .site-header nav a{min-height:44px;display:flex;align-items:center}
 .floating-contact a,.call-pill{min-width:48px;min-height:48px}
