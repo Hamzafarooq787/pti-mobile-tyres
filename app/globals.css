@@ -8,6 +8,7 @@
   --pti-dark-green: #014d25;
   --pti-soft-green: #edf8f1;
   --pti-green-border: #c9e5d4;
+  --pti-mint: #dcefe4;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--pti-charcoal);background:#fff;font-family:Montserrat,Arial,sans-serif}a{color:inherit}button,input,select,textarea{font:inherit}img{max-width:100%;height:auto}main{min-width:0}.skip-link{position:fixed;top:-100px;left:16px;background:var(--pti-charcoal);color:#fff;padding:12px;z-index:9999}.skip-link:focus{top:12px}.phone-strip{height:37px;background:var(--pti-red);color:white;padding:5px max(4%,24px);font-family:Montserrat,sans-serif;font-size:18px}.phone-strip a{text-decoration:none}.navigation-row{height:87px;display:flex;border-bottom:1px solid #d6d6d6;align-items:stretch;padding:0 2.5%}.brand{width:260px;border-right:1px solid #ddd;display:flex;align-items:center;flex-shrink:0;text-decoration:none;color:var(--pti-charcoal)}.brand-text{font-family:Saira,sans-serif;font-weight:900;line-height:.88;font-size:22px;font-style:italic;letter-spacing:-1px}.brand-text>span{color:var(--pti-red)}.brand-text strong{font-size:34px;letter-spacing:2px;color:var(--pti-red)}.site-header nav{flex:1;display:flex;align-items:center;justify-content:center;gap:29px;padding:0 25px}.site-header nav a{font-family:Montserrat,sans-serif;text-transform:uppercase;font-weight:700;font-size:13px;text-decoration:none;white-space:nowrap;padding:20px 0}.site-header nav a:hover,.site-header nav a[aria-current=page]{color:var(--pti-red)}.menu-toggle{display:none}.site-footer{background:radial-gradient(ellipse at 0 0,#6d1010 0,transparent 55%),#000;color:white}.footer-grid{max-width:1440px;margin:auto;padding:100px 3% 95px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.85fr) minmax(0,1.05fr) minmax(0,1fr);gap:55px}.reference-kit-30 .site-footer h2{font-family:Saira,sans-serif;font-size:25px;font-weight:600;margin:0 0 35px;color:#fff}.footer-grid p,.footer-grid li{font-size:16px;line-height:1.55;font-family:Montserrat,sans-serif;color:#eee}.footer-grid p{margin:0;text-align:justify}.footer-grid ul{padding:0;list-style:none;margin:0}.footer-grid li{margin-bottom:18px;overflow-wrap:anywhere}.footer-grid a{text-decoration:none}.copyright{border-top:1px solid #272a30;display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:17px 24px;text-align:center;font:16px Montserrat,sans-serif}.copyright a{text-decoration:none}.copyright .heart{color:#ff7777}.call-pill{position:fixed;bottom:20px;left:16px;z-index:1000;display:flex;align-items:center;gap:10px;border-radius:50px;padding:15px 20px;background:var(--pti-red);color:#fff!important;text-decoration:none!important;font:bold 17px Arial,sans-serif;box-shadow:0 3px 8px #0004;animation:ptiCallPulse 1.8s infinite}.call-pill svg{height:18px;width:18px;animation:ptiPhoneShake 2.8s infinite}.floating-contact{position:fixed;right:18px;bottom:20px;z-index:1000;display:flex;flex-direction:column;gap:12px}.floating-contact a{display:grid;place-items:center;width:53px;height:53px;border-radius:50%;color:#fff;box-shadow:0 4px 16px #0003}.floating-whatsapp{background:var(--pti-green)}.floating-phone{background:var(--pti-red)}.floating-contact svg{width:29px;height:29px}.floating-phone svg{width:23px;height:23px}.not-found{max-width:850px;padding:100px 24px;margin:auto}.not-found h1{font:700 52px Saira,sans-serif}.not-found a{color:var(--pti-red)}.reference-widget-html{min-width:0}.reference-widget .reference-icon-list-items{list-style:none}.reference-widget svg{max-width:100%}.reference-widget-icon-box .reference-icon-box-icon{font-family:Arial,sans-serif}.reference-widget-icon-box .reference-icon-box-icon i:before{content:'⌖';font-size:45px}.reference-widget-icon-box .reference-icon-box-icon i{font-style:normal}.reference-widget-elementskit-icon-box i:before{content:'⚙';font-size:24px}.reference-widget-elementskit-heading .ekit-heading__description{font-family:Montserrat,sans-serif}.reference-widget-rkit-running_text{overflow:hidden}.rkit-running-text-container{overflow:hidden}.rkit-running-text-content{display:flex;width:max-content;animation:ptiMarquee 32s linear infinite}.reference-widget-rkit-running_text:hover .rkit-running-text-content{animation-play-state:paused}.reference-widget-rkit-running_text h3{white-space:nowrap}.reference-widget-form textarea{min-height:130px}.reference-widget-form button{cursor:pointer}.reference-widget-image img{object-fit:cover}.reference-element:has(> .e-con-inner:empty){display:none}form [type=submit]{cursor:pointer}form [type=submit]:hover{filter:brightness(.93)}:focus-visible{outline:3px solid #15803d;outline-offset:4px}input:focus,textarea:focus,select:focus{outline:2px solid var(--pti-red);outline-offset:2px}
 @keyframes ptiCallPulse{0%,100%{box-shadow:0 3px 8px #0004,0 0 0 0 #db010d40}60%{box-shadow:0 3px 8px #0004,0 0 0 9px #db010d00}}@keyframes ptiPhoneShake{0%,80%,100%{transform:rotate(0)}84%,92%{transform:rotate(-15deg)}88%,96%{transform:rotate(15deg)}}@keyframes ptiMarquee{to{transform:translateX(-33.3333%)}}
@@ -99,8 +100,33 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
 }
 
 
+/* Green heading accents alternate with the red service and trust headings. */
+#content :is(.hero-content h1, .road-process-head h2, .coverage-head h2, .mts-contact-info h2) > span {
+  color: var(--pti-green);
+}
+
+#content .mts-trust-section {
+  background: radial-gradient(ellipse at 85% 40%, var(--pti-mint), transparent 58%), #fff;
+}
+
+#content .road-process-section {
+  background: linear-gradient(180deg, #fff 15%, var(--pti-soft-green));
+}
+
+#content .road-finish {
+  border-color: var(--pti-green-border);
+}
+
+#content .road-finish small {
+  color: var(--pti-green);
+}
+
+.site-footer .copyright {
+  border-top-color: var(--pti-dark-green);
+}
+
 /* Green highlights service coverage, availability and WhatsApp. */
-#content :is(.mts-check, .coverage-tag, .mts-form-live, .mts-secure span, .live-btn) {
+#content :is(.mts-check, .coverage-tag, .mts-form-live, .mts-secure span, .live-btn, .road-process-label, .road-finish > span) {
   color: var(--pti-green);
   background: var(--pti-soft-green);
   border-color: var(--pti-green-border);
@@ -129,7 +155,7 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
 }
 
 #content .coverage-section {
-  background: linear-gradient(150deg, var(--pti-soft-green), #fff 55%, var(--pti-soft-green));
+  background: linear-gradient(150deg, var(--pti-mint), var(--pti-soft-green) 55%, #fff);
 }
 
 #content .coverage-area-dot {
@@ -137,7 +163,7 @@ body.reference-kit-30 .site-header button.menu-toggle{background:white;color:var
 }
 
 #content .coverage-area-dot::before,
-#content :is(.coverage-chip i, .mts-form-live span) {
+#content :is(.coverage-chip i, .mts-form-live span, .road-process-label span) {
   background: var(--pti-green);
 }
 
