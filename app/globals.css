@@ -415,3 +415,47 @@ body.reference-kit-30 .site-header button.menu-toggle{background:var(--pti-red);
     padding-inline: 18px;
   }
 }
+
+.pti-photo-gallery {
+  background: var(--pti-soft-green);
+  padding: clamp(32px, 6vw, 68px) clamp(16px, 4vw, 40px);
+}
+
+#content .pti-photo-gallery h2 {
+  margin: 0 auto 24px;
+  color: var(--pti-charcoal);
+  text-align: center;
+  font: 800 clamp(26px, 4.5vw, 42px)/1.15 Saira, Arial, sans-serif;
+}
+
+.pti-photo-gallery h2 span { color: var(--pti-green); }
+
+.pti-photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(8px, 1.4vw, 16px);
+  max-width: 1240px;
+  margin-inline: auto;
+}
+
+.pti-photo-gallery-grid a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--pti-green-border);
+  border-radius: 12px;
+}
+
+.pti-photo-gallery-grid a:focus-visible {
+  outline: 3px solid var(--pti-green);
+  outline-offset: 3px;
+}
+
+.pti-photo-gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .pti-photo-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
